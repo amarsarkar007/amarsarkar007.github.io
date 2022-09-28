@@ -372,6 +372,24 @@ form .btn2{
     color: #ff004f;
 }
 
+#github_calendar{
+    margin-bottom: 60px;
+}
+
+
+#github_calendar .sub-title{
+    margin: 40px 0 30px -10px;
+}
+
+
+.position-relative{
+    margin-top: 15px;
+}
+
+/* .contrib-column{
+    font-size: 16px;
+} */
+
 /* ----------------------css for small screens----------------------- */
 nav .fas{
     display: none;
