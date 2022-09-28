@@ -373,7 +373,8 @@ form .btn2{
 }
 
 #github_calendar{
-    margin-bottom: 60px;
+    margin-bottom: 110px;
+    margin-top: 30px;
 }
 
 
@@ -386,9 +387,41 @@ form .btn2{
     margin-top: 15px;
 }
 
-/* .contrib-column{
-    font-size: 16px;
-} */
+
+.stats{
+    /* border: 1px solid crimson; */
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#stats{
+    margin: 30px 0 20px 0;
+}
+
+.stats-content{
+    /* border: 1px solid white; */
+    height: 140px;
+    width: 18%;
+    background: #262626;
+    text-align: center;
+    /* padding: 40px; */
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.stats-content h2{
+    color: #ff004f;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.stats-content p{
+    margin-top: 5px;
+}
+
 
 /* ----------------------css for small screens----------------------- */
 nav .fas{
@@ -455,6 +488,7 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
+
 
     .contact-left, .contact-right{
         flex-basis: 100%;
