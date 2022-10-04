@@ -17,11 +17,53 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)) ,url(images/final.jpg); */
-    background-image: url(images/landing12.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-6.jpg);
+    /* background-image: url(images/landing-google-3.avif); */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    /* animation: change 10s infinite ease-in-out;
+    animation-fill-mode: forwards; */
 }
+
+/* @keyframes change{
+    0%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-2.avif);
+
+    }
+    20%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-3.avif);
+
+    }
+    30%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-4.avif);
+
+    }
+    40%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-5.jpg);
+
+    }
+    60%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-6.jpg);
+
+    }
+    80%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-5.jpg);
+
+    }
+    100%
+    {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/landing-google-5.jpg);
+
+    }
+    
+} */
 
 .container{
     padding: 10px 10%;
@@ -71,13 +113,24 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 65px;
-    margin-top: 20px;
+    font-size: 80px;
+    /* margin-top: 10px; */
+    font-weight: bold;
 }
 
 .header-text h1 span{
     color: #ff004f;
 
+}
+
+.typing-text{
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.typing-text span{
+    color: #ff004f;
+    font-weight: bolder;
 }
 
 #about{
@@ -110,6 +163,9 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}
+.sub-title+p{
+    line-height: 20px;
 }
 
 .tab-titles{
@@ -420,6 +476,31 @@ form .btn2{
 
 .stats-content p{
     margin-top: 5px;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background: crimson;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
