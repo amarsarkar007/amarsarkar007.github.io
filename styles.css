@@ -74,13 +74,40 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    background: #080808;
+    top: 0%;
+    width: 100%;
+    padding-left: auto;
+    z-index: 9;
+    
 
+}
+
+.resume{
+    padding: 20px;
+    display: inline-block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+#header .container{
+    padding-left: 0px;
+}
+
+nav img{
+    margin-left: 0px;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    padding-right: 20px;
 }
 
 nav ul li a{
@@ -508,6 +535,8 @@ form .btn2{
 nav .fas{
     display: none;
 }
+
+
 
 @media only screen and (max-width: 600px){
 
