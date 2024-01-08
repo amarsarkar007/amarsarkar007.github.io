@@ -75,7 +75,8 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed;
-    background: #080808;
+    /* background: #080808; */
+    background-color: transparent;
     top: 0%;
     width: 100%;
     padding-left: auto;
@@ -289,7 +290,9 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: auto; */
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -306,6 +309,31 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 0.5s;
 }
+
+.work a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.fa-github{
+    font-size: xx-large;
+}
+
+.fa-github-alt{
+    font-size: xx-large;
+}
+
+.noDeployLink{
+    margin-left: -50px;
+}
+
+
+
+
+
 
 .layer{
     width: 100%;
@@ -529,6 +557,8 @@ form .btn2{
     opacity: 1;
     pointer-events: auto;
 }
+
+
 
 
 /* ----------------------css for small screens----------------------- */
